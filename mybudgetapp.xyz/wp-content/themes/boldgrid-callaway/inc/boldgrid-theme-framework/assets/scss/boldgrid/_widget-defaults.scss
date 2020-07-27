@@ -1,0 +1,46 @@
+// Default Widget Styles
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+select[name="archive-dropdown"] {
+	width: auto;
+}
+.footer-company-details .textwidget {
+	text-align: center;
+	color: white;
+}
+.widget.well{
+	color: #333;
+	a, .site-info a{
+		color: #333;
+	}
+}
+.boldgrid-widget {
+	.widget-title {
+		display: none;
+	}
+	&.widget {
+		margin: 0;
+	}
+}
+
+// Default Sidebar Message
+.empty-sidebar-message {
+	display: inline-block;
+}
+
+// Search Widgets
+.widget_search {
+	.button-primary {
+		height: auto;
+		margin: 0;
+		margin-top: 0;
+		padding: 0 1em;
+		line-height: 3;
+		font-size: 14px;
+	}
+}

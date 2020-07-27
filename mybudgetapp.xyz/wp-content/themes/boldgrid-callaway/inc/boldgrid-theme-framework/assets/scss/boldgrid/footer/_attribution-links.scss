@@ -1,0 +1,18 @@
+.attribution-theme-mods {
+	.link {
+		padding: .5em;
+		&:after {
+			content: "";
+			margin-left: 1em;
+			border-left: 1px solid currentColor;
+		}
+		&.no-separator,
+		&:last-child {
+			padding-right: 0;
+			&:after {
+				margin: 0;
+				border: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+/* Participants Database Global Admin Stylesheet */
+
+.branch-3-6 #adminmenu #toplevel_page_participants-database div:hover.wp-menu-image,
+.branch-3-7 #adminmenu #toplevel_page_participants-database div:hover.wp-menu-image {
+  background: url("../../../../wp-admin/images/menu.png?ver=20100531") no-repeat scroll -300px -1px transparent;
+}
+.branch-3-6 #adminmenu #toplevel_page_participants-database div.wp-menu-image, 
+.branch-3-7 #adminmenu #toplevel_page_participants-database div.wp-menu-image {
+  background: url("../../../../wp-admin/images/menu.png?ver=20100531") no-repeat scroll -300px -33px transparent;
+}
+.branch-3-7 #adminmenu #toplevel_page_participants-database div.wp-menu-image,
+.branch-3-6 #adminmenu #toplevel_page_participants-database div.wp-menu-image {
+  background-position: -300px -33px;
+}
+.branch-3-7 #adminmenu #toplevel_page_participants-database div:hover.wp-menu-image,
+.branch-3-6 #adminmenu #toplevel_page_participants-database div:hover.wp-menu-image {
+  background-position: -300px -1px;
+}
+#toplevel_page_participants-database img {
+  visibility:hidden;
+}
+/* add "people" icon */
+#adminmenu #toplevel_page_participants-database div.wp-menu-image:before  {
+  content: "\f307";
+}
+.branch-3-7 #adminmenu #toplevel_page_participants-database div.wp-menu-image:before,
+.branch-3-6 #adminmenu #toplevel_page_participants-database div.wp-menu-image:before {
+  content: '';
+}
+#toplevel_page_participants-database .dashicons {
+  vertical-align: bottom;
+  margin-right: 2px;
+}
+
+#the-list .xnau-contribute {
+  vertical-align: middle;
+}
+#the-list .icon-xnau-glyph {
+  vertical-align: middle;
+  font-size: 130%;
+  color: #925700;
+}
+.pdb_admin_notices-notice.notice-info .dashicons {
+  color: #00a0d2;
+}
+.pdb_admin_notices-notice.notice-success .dashicons {
+  color: #46b450;
+}
+.pdb_admin_notices-notice.notice-warning .dashicons {
+  color: #ffb900;
+}
+.pdb_admin_notices-notice.notice-error .dashicons {
+  color: #dc3232;
+}

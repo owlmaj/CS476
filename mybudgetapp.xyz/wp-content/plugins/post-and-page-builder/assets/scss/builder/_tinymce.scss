@@ -1,0 +1,15 @@
+.mce-content-body hr[data-mce-selected] {
+	outline: none;
+}
+
+.mce-widget[aria-label="BoldGrid Editing"] {
+	display: none;
+}
+
+body#wpview-iframe-sandbox {
+	background: transparent !important;
+}
+
+#post-body-content #insert-gridblocks-button {
+	display: inline-block;
+}

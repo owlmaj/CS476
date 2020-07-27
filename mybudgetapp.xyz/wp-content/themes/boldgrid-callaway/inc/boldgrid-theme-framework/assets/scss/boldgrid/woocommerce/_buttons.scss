@@ -1,0 +1,41 @@
+/* Buttons need some tweaks */
+&.woocommerce,
+&.woocommerce-page {
+	/* Base Buttons */
+	.button-primary,
+	.button-secondary {
+		height: auto;
+		padding: 0 1em;
+		margin: 0;
+		line-height: 3;
+		font-size: 14px;
+	}
+	/* Cross Sells */
+	.cross-sells .products {
+		.btn.button-primary {
+			padding: 0;
+		}
+	}
+	.single_variation_wrap {
+		.woocommerce-variation-add-to-cart.variations_button {
+			.btn.button-primary {
+				margin-top: 1em;
+			}
+		}
+	}
+	.return-to-shop {
+		.btn.button-primary {
+			@media only screen and (min-width : 480px) {
+				padding: 1em;
+			}
+		}
+	}
+	/* Search Sidebar Widget */
+	@media only screen and (min-width: 768px) {
+		&.sidebar-1 .sidebar #searchform button.button-primary {
+			padding: 0 1em;
+			height: auto;
+			width: auto;
+		}
+	}
+}

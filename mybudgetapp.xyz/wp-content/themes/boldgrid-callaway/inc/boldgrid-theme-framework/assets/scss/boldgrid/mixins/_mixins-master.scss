@@ -1,0 +1,39 @@
+// Headings Styles
+@mixin headings($from: 1, $to: 6){
+	@for $i from $from through $to{
+		@if $i == 1 {
+			h#{$i}:not(.site-title), .h#{$i}:not(.site-title) {
+				@content
+			}
+		} @else {
+			h#{$i}, .h#{$i} {
+				@content
+			}
+		}
+	}
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}

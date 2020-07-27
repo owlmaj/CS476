@@ -1,0 +1,957 @@
+@charset "UTF-8";
+
+/*** PARTICIPANT LIST ***/
+body[class*='participants-database'] .widefat td {
+  vertical-align:middle;
+}
+body[class*='participants-database']  .widefat tr:nth-child(even) {
+  background-color:#f6f6f6;
+}
+.participants_db input[type='text'],
+.participants_db input[type='email'],
+.participants_db input[type='url'],
+.participants_db input[type='tel'],
+.participants_db input[type='number'],
+.participants_db input[type='password'],
+.participants_db input[type='date']
+{
+  width: 99%;
+  max-width: 520px;
+}
+.participants_db input[disabled] {
+  color: inherit;
+}
+.participants_db option[value='none'],
+.participants_db option[value='other'] {
+  font-weight:bold;
+}
+.participants_db input[id$='_other'] {
+}
+.participants_db input[name='temp'] {
+  display:none;
+}
+.participants_db .manage-fields {
+  z-index: 1;
+  position: relative;
+  zoom: 1;
+}
+.participants_db .manage-fields input[type="text"].digit {
+  width: 30px;
+}
+.participants_db .manage-fields select {
+  width: 100%;
+  float: none;
+}
+.participants_db .manage-fields textarea {
+  width: 100%;
+}
+.pre-mp6 .participants_db fieldset.widefat {
+  border: none;
+}
+.pagination {
+  margin-bottom: 20px;
+}
+.branch-3-7 .redfade,
+.branch-3-6 .redfade,
+.branch-3-5 .redfade {
+  box-shadow: 0 0 40px rgba(197, 99, 59, 0.3) inset;
+  border-color: rgba(197, 99, 59, 0.5);
+  background-color: rgb( 255,255,255);
+}
+[class*="pdb-"] p,
+[class*="pdb-"] h4,
+.multicheckbox,
+.selectother {
+  max-width: 950px;
+}
+fieldset.widefat {
+  width:100%;
+  overflow:auto;
+}
+fieldset.widefat.inline-controls,
+fieldset.widefat.inline-controls label {
+  line-height: 2em;
+}
+fieldset.widefat.inline-controls input,
+fieldset.widefat.inline-controls  select,
+fieldset.widefat.inline-controls label {
+  margin: 0 5px;
+  vertical-align: baseline;
+}
+fieldset.widefat.inline-controls input:first-of-type,
+fieldset.widefat.inline-controls  select:first-of-type,
+fieldset.widefat.inline-controls label:first-of-type {
+  margin-left: 0;
+}
+fieldset.widefat.inline-controls label {
+  padding-right: 15px;
+}
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+  height: auto;
+  line-height: 24px;
+}
+.pdb-searchform .filter-count {
+  display: inline-block;
+  margin-left: 30px;
+  width: 50%;
+}
+.dashicons.sort-icon {
+  font-size: 30px;
+  line-height: 0.7;
+  opacity: 0.7;
+}
+
+.radio > label {
+  display: inline-block;
+  margin: 0 15px 15px 0;
+}
+#list_filter_count {
+  width: 3em;
+}
+
+/* HORIZ SCROLL */
+.pdb-horiz-scroll-scroller {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.pdb-horiz-scroll-width {
+  min-width: 100em;
+}
+.manage-fields-wrap .pdb-horiz-scroll-width {
+  width: 150em;
+}
+
+/*** FOOTER ***/
+.pdb-footer {
+  display: inline-block;
+  padding:7px;
+  width:auto;
+  overflow:auto;
+}
+.pdb-footer.padded {
+  padding: 0px 15px;
+}
+#PDb_footer {
+  background-color: rgba(245, 156, 0, 0.1);
+  border-color: rgba(245, 156, 0, 0.4);
+}
+.pdb-footer .glyph-link {    
+  display: block;
+  float: left;
+  font-size: 36px;
+  height: 36px;
+  overflow: hidden;
+} 
+.pdb-footer .icon-xnau-glyph {
+  margin-right: 0.5ex;
+  background-color: #ffffff;
+}
+.pdb-footer .section {
+  width:280px;
+  float:left;
+  margin:0 18px;
+}
+#PDb_footer .section a {
+  color: #925700;
+}
+#PDb_footer .section a:hover {
+  color: rgba(245, 156, 0, 1);
+}
+h4 .lowast {
+  position: relative;
+  top: -3px;
+}
+aside.attribution {
+  font-size: 100%;
+  font-style: italic;
+  margin-top: 4em;
+}
+
+.top-bar-submit {
+  position: fixed;
+  top: 32px;
+  right: 0;
+  width: auto;
+  height: auto;
+  background: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-bottom: 2px solid HSL(0, 0%, 86.7%);
+  border-left: 2px solid HSL(0, 0%, 86.7%);
+  z-index: 100;
+}
+p.submit.top-bar-submit  {
+  margin-top: 0;
+}
+.top-bar-submit .field-group-title {
+  width: auto;
+  border-bottom: none;
+  font-size: 120%;
+  vertical-align: sub;
+  padding-right: 10px;
+}
+.top-bar-space {
+  margin-top: 50px;
+}
+.mobile .top-bar-submit .field-group-title {
+  display: block;
+}
+
+/*** LIVE NOTIFICATIONS ***/
+.pdb-news-panel {
+  width: 30%;
+  max-width: 400px;
+  min-width: 300px;
+  float: right;
+  margin-top: 3em;
+  margin-right: 7px;
+}
+.wrap.has-news-panel {
+  float:left;
+  width: 66%;
+}
+.pdb-live-notification.postbox h3, 
+.pdb-live-notification.postbox p, 
+.pdb-live-notification.postbox h2, 
+.pdb-live-notification.postbox h4 {
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 1.3;
+}
+.top_notification_banner {
+  border-bottom: 4px solid rgb(101, 98, 35);
+  background-color: rgb(181, 85, 1);
+  padding-bottom: 3px;
+}
+.padded .top_notification_banner {
+  margin: 0 -14px;
+}
+.pdb-news-panel .top_notification_banner {
+  border-bottom: 4px solid rgb(101, 98, 35);
+  background-color: rgb(181, 85, 1);
+  padding-bottom: 10px;
+}
+#PDb_greeting {
+  max-width: 650px;
+}
+
+.pdb-live-notification.postbox {
+  color: #564023;
+}
+.pdb-news-panel.postbox {
+  color: #564023;
+  border-bottom: 5px solid rgb(181, 85, 1);
+}
+
+@media (max-width: 1155px) {
+  .pdb-news-panel,
+  .wrap.has-news-panel {
+    float: none;
+    width: calc( 100% - 10px );
+  }
+  .pdb-news-panel {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wrap.has-news-panel {
+  }
+}
+
+/*** ***/
+.admin-edit-participant .fieldnote {
+  color: #AAAAAA;
+  font-style: italic;
+}
+.pdb-upload {
+  display: inline-block;
+  border: 1px solid #DDD;
+  overflow: auto;
+  padding: 5px;
+}
+input[readonly] {
+  border:none;
+  background:none transparent;
+  width: 100%;
+}
+input.focused[readonly] {
+  background-color: #ffffff;
+  border: 1px solid #999;
+}
+body[class*='participants-database'] a.delete {
+  /*  display:block;
+    width:12px;
+    height:26px;
+    background:url('../ui/delete.png') no-repeat center center;*/
+}
+body[class*='participants-database'] .form-table {
+  /*  margin-bottom:4em;*/
+}
+.pdb-list .image-field-wrap img {
+  height: 30px;
+  width: auto;
+}
+.image-field-wrap img {
+  vertical-align: middle;
+}
+.image-field-wrap.file-notfound {
+  text-decoration: line-through;
+}
+.wp-admin .helptext {
+  line-height: 1.5;
+  color: #777777;
+  font-style: italic;
+}
+.wp-list-table th, .wp-list-table td, .form-table th, .form-table td {
+  vertical-align: top;
+}
+.participants_db .form-table tr:hover {
+  background-color: #F7F7F7;
+} 
+.wrap.pdb-admin-edit-participant {
+  background-color: transparent;
+}
+.participants_db input[type='text']+.helptext,
+.participants_db input[type='email']+.helptext,
+.participants_db input[type='url']+.helptext,
+.participants_db input[type='tel']+.helptext,
+.participants_db input[type='number']+.helptext,
+.participants_db input[type='date']+.helptext,
+.participants_db input[type='password']+.helptext,
+.participants_db input[type='checkbox']+.helptext,
+.participants_db select+.helptext,
+.participants_db script+.helptext,
+.participants_db .wp-editor-wrap+.helptext,
+.participants_db textarea+.helptext {
+  max-width:390px;
+}
+.participants_db input[type='text']+.helptext,
+.participants_db input[type='email']+.helptext,
+.participants_db input[type='url']+.helptext,
+.participants_db input[type='tel']+.helptext,
+.participants_db input[type='number']+.helptext,
+.participants_db input[type='password']+.helptext,
+.participants_db input[type='date']+.helptext {
+  display: block;;
+}
+.participants_db .wp-editor-wrap {
+  float:left;
+}
+.participants_db .wp-editor-wrap + .helptext, 
+.participants_db textarea + .helptext {
+  display: inline-block;
+  margin: 30px 0px 0px 0px;
+}
+textarea,
+select,
+input[type="text"],
+input[type="checkbox"],
+.multicheckbox label,
+.link-element label {
+  /*  float: left;
+    margin-right: 10px;*/
+}
+.checkbox-group label,
+.radio-group label {
+  padding-right: 10px;
+}
+.pdb-searchform fieldset {
+  display: inline-block;
+}
+.participants_db .inline-controls input[type='text'],
+.participants_db .inline-controls input[type='checkbox'],
+.participants_db .inline-controls select {
+  /*  float: none;
+    display: inline;
+    margin-right:0;*/
+}
+.participants_db .inline-controls input[type='text'] {
+  max-width: 20em;
+}
+.pdb-admin-edit-participant .pdb-upload input[type=file] {
+  vertical-align: middle;
+}
+#checkall {
+  margin: 0;
+}
+.checkmark {
+  font-size:19px;
+  padding:0;
+  line-height: 1;
+}
+.emphasized {
+  color: #7C0000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+body[class*='participants-database'] .selectother input[type=text] {
+  width:auto;
+}
+table.spreadsheet {
+  width:90%;
+  border-collapse:collapse;
+}
+.spreadsheet td, .spreadsheet th {
+  border:1px dashed #AAAAAA;
+  padding:3px;
+}
+body[class*='participants-database'] .text-block {
+  max-width: 35em;
+  line-height: 1;
+}
+body[class*='participants-database'] .text-block p,
+body[class*='participants-database'] .text-block li {
+  line-height: 1.3;
+  font-size: 110%;
+}
+/* now using WP defaults
+.participants_db input[type="submit"] {
+  background-color:#ffffff;
+  border: 1px solid #AAAAAA;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.3) inset;
+  padding: 3px 8px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.participants_db input:hover[type="submit"] {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+*/
+.participants_db input.button-primary {
+  padding:0 10px 1px;
+}
+#delete_button.unarmed {
+  opacity:0.5;
+}
+#delete_button.armed {
+  border: 1px solid rgba(204, 0, 0, 0.5);
+  color: #000;
+  /*  box-shadow: 0 0 13px rgba(204, 0, 0, 0.3) inset;*/
+}
+#delete_button.armed:hover {
+  box-shadow: 0 0 2px rgba(204, 0, 0, 0.1) inset;
+}
+.pdb-searchform input[type="checkbox"], .pdb-searchform input[type="radio"] {
+  margin-right: 5px;
+}
+.participants_db.settings-class .pdb_anchor {
+  position:relative;
+  top:-5em;
+}
+.participants_db .pdb-list td > input[type="checkbox"] {
+  margin-top: -3px;
+}
+.edit-participant textarea, .participants_db textarea, .edit-participant select, .participants_db select, .participants_db input, .edit-participant input, .link-element label {
+  /*  vertical-align: top;*/
+}
+[class*="participants-database"] .wp-editor-wrap {
+  max-width: 600px;
+}
+[class*="participants-database"] .wp-editor-area {
+  background-color: #FFFFFF;
+  border: 2px solid #DFDFDF;
+  color: #333333;
+  height: 20em;
+}
+.pdb-list span.textarea {
+  display: block;
+  max-height: 5em;
+  max-width: 150px;
+  overflow: auto;
+}
+.number-entry.single-digit {
+  width: 4em;
+}
+/* set placeholder colors */
+::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+:-moz-placeholder {
+  color: #AAAAAA !important;
+}
+:-ms-input-placeholder {
+  color: #AAAAAA;
+}
+:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+:focus:-moz-placeholder {
+  color: transparent !important;
+}
+.pdb-admin-edit-participant .fieldnote,
+.pdb-admin-edit-participant .reqd {
+  color: #AAAAAA;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+/** manage fields feedback **/
+.wrap div.updated {
+  position: relative;
+}
+
+
+
+.mirror {
+  display:block; 
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#message {
+  font-size: 16px;
+}
+.pdb-jquery-ui .color-text {
+  background-color: hsl(190, 60%, 95%);
+  border-color: hsl(205.7, 75%, 89%); /* #cae4e9 */
+}
+.pdb-jquery-ui .color-text .field-header {
+  background-color: hsl(205.7, 75%, 89%); /*  hsl(190.6, 47.2%, 85.9%) */
+}
+.pdb-jquery-ui .color-text .form-element-label {
+  color: hsl(205.7, 60%, 80%);
+}
+
+.pdb-jquery-ui .color-selector {
+  background-color: hsl(150, 50%, 95%);
+  border-color: hsl(152.1, 40%, 86.3%);
+}
+.pdb-jquery-ui .color-selector .field-header {
+  background-color: hsl(152.1, 40%, 86.3%);
+}
+.pdb-jquery-ui .color-selector .form-element-label {
+  color: hsl(149.4, 45%, 78.6%);
+}
+
+.pdb-jquery-ui .color-numeric {
+  background-color: hsl(55, 60%, 95%);
+  border-color: hsl(54.7, 50.6%, 82.5%);
+}
+.pdb-jquery-ui .color-numeric .field-header {
+  background-color: hsl(54.7, 50.6%, 82.5%);
+}
+.pdb-jquery-ui .color-numeric .form-element-label {
+  color: hsl(54.8, 56.1%, 67.8%);
+}
+
+
+.pdb-jquery-ui .color-upload {
+  background-color: hsl(30, 65%, 95%);
+  border-color: hsl(31.8, 48.6%, 86.3%);
+}
+.pdb-jquery-ui .color-upload .field-header {
+  background-color: hsl(31.8, 48.6%, 86.3%);
+}
+.pdb-jquery-ui .color-upload .form-element-label {
+  color: hsl(30, 65%, 80%);
+}
+
+.pdb-jquery-ui .color-captcha {
+  background-color: hsl(0, 40%, 95%);
+  border-color: hsl(0, 40%, 90%);
+}
+.pdb-jquery-ui .color-captcha .field-header {
+  background-color: hsl(0, 40%, 90%);
+}
+.pdb-jquery-ui .color-captcha .form-element-label {
+  color: hsl(0, 40%, 80%);
+}
+
+.pdb-jquery-ui .color-utility {
+  background-color: hsl(0, 10%, 95%);
+  border-color: hsl(0, 11.5%, 88%);
+}
+.pdb-jquery-ui .color-utility .field-header {
+  background-color: hsl(0, 11.5%, 88%);
+}
+.pdb-jquery-ui .color-utility .form-element-label {
+  color: hsl(0, 10%, 80%);
+}
+
+.pdb-jquery-ui .color-group {
+  background-color: hsl(192, 60%, 95.1%);
+  border-color: hsl(192.9, 51.9%, 89.4%);
+}
+.pdb-jquery-ui .color-group .field-header {
+  background-color: hsl(192.9, 51.9%, 89.4%);
+}
+.pdb-jquery-ui .color-group .form-element-label {
+  color: hsl(192.9, 51.9%, 89.4%);
+}
+
+.pdb-jquery-ui .color-group.view-mode-private {
+  background-color: hsl(0, 100%, 97.5%);
+  border-color: hsl(0, 50%, 92.2%);
+}
+.pdb-jquery-ui .color-group.view-mode-private .field-header {
+  background-color: hsl(0, 50%, 92.2%);
+}
+.pdb-jquery-ui .color-group.view-mode-private .form-element-label {
+  color: hsl(0, 50%, 92.2%);
+}
+
+.pdb-jquery-ui .color-group.view-mode-admin {
+  background-color: hsl(92, 60%, 95.1%);
+  border-color: hsl(92, 60%, 90%);
+}
+.pdb-jquery-ui .color-group.view-mode-admin .field-header {
+  background-color: hsl(92, 45.5%, 87.1%);
+}
+.pdb-jquery-ui .color-group.view-mode-admin .form-element-label {
+  color: hsl(92, 60%, 80%);
+}
+
+
+.pdb-jquery-ui .color-custom {
+  background-color: hsl(220, 60%, 95%);
+  border-color: hsl(220, 60%, 90%);
+}
+.pdb-jquery-ui .color-custom .field-header {
+  background-color: hsl(220, 60%, 90%);
+}
+.pdb-jquery-ui .color-custom .form-element-label {
+  color: hsl(220, 60%, 80%);
+}
+
+/* SETTINGS PAGE */
+.settings-class textarea {
+  float:left;
+  margin-right:10px;
+  height:140px;
+  width:400px;
+}
+.pdb-admin-settings {
+  max-width: 670px;
+}
+.pdb-admin-settings h3 {
+  margin-top: 3em;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #aaa;
+}
+[class*=participants-database] h2 {
+  border-bottom: 10px solid rgba( 0,0,0,0.08);
+}
+[class*=participants-database] .wrap [class$="icon32"] + h2 {
+  border-bottom: none;
+}
+.settings-subsection-row {
+  border-top: 3px solid #0000001a;
+}
+.settings-subsection-row-spacer {
+  padding: 3em;
+  height: 3em;
+}
+
+/*   UI TABS   */
+
+/* hide before tabs kicks in */
+#fields-tabs.ui-tabs {
+  visibility:visible;
+}
+#fields-tabs, 
+.mask {
+  visibility:hidden;
+}
+.mask {
+  position: absolute;
+  background-color: #F0F0F0;
+  display: block;
+  z-index: 1000;
+}
+.branch-3-7 .mask,
+.branch-3-6 .mask,
+.branch-3-5 .mask  {
+  background-color: white;
+}
+.ui-tabs-nav .mask {
+  left: 1px;
+  bottom: -1px;
+  height: 1px;
+  width: calc(100% - 6px);
+  display: block;
+  z-index: 900;
+}
+.participants_db .ui-widget-content {
+  background-image: none;
+  border: none;
+  color: inherit;
+}
+.participants_db .ui-widget {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+
+.participants_db .ui-widget-content {
+  background: transparent;
+}
+.participants_db .ui-tabs-nav {
+  background-image: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  margin: 18px 0 20px;
+  padding: 0 10px;
+  overflow: visible;
+  width: 100%;
+}
+.participants_db .ui-tabs-nav li {
+  background-color: transparent;
+  background-image: none;
+  border:none;
+  display: inline-block;
+  position: relative;
+  margin: 1px 0 2px;
+  height: auto;
+  width: auto;
+  float: none;
+}
+.participants_db .ui-tabs-nav li.ui-tabs-active.ui-state-active {
+  margin-bottom:0;
+}
+.branch-3-7 .participants_db .ui-tabs-nav li,
+.branch-3-6 .participants_db .ui-tabs-nav li,
+.branch-3-5 .participants_db .ui-tabs-nav li {
+  margin: 1px 0 2px;
+}
+.participants_db .ui-tabs-nav .ui-state-default a {
+  background-color: rgba(0,0,0,0.1);
+  text-shadow: none;
+  padding-bottom: 9px;
+}
+.participants_db .ui-tabs-nav .ui-tabs-active.ui-state-active a {
+  background-color: rgba(0,0,0,0);
+  padding-bottom: 11px;
+  font-weight: bold;
+}
+.participants_db .ui-tabs-nav .utility a {
+  background-color: hsla(0, 0%, 0%, 0.2);
+  color: hsla(0,0%,44.3%,1);
+}
+.participants_db .ui-tabs-nav .ui-tabs-active.ui-state-active .mask {
+  visibility: visible;
+}
+.participants_db .ui-tabs-nav li a {
+  padding: 4px 20px 6px;
+  font-weight: normal;
+}
+.participants_db .ui-tabs-nav li a {
+  line-height: 1.4;
+  display: inline-block;
+  padding: 9px 12px 5px;
+  margin: 0 4px 0 0;
+  border-style: solid;
+  border-color: #CCC #CCC #F9F9F9;
+  border-width: 1px 1px 0;
+  color: #888888;
+  background-color:#eeeeee;
+  text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
+  text-decoration: none;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -khtml-border-top-left-radius: 2px;
+  -khtml-border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.participants_db .ui-tabs-nav li a:hover {
+  color: #000000;
+  background-color: #F3F3F3;
+
+}
+.participants_db .ui-tabs-nav li.ui-tabs-selected a, 
+.participants_db .ui-tabs-nav li.ui-state-active a,
+.participants_db .ui-tabs-nav li a:focus {
+  color: #333333;
+  outline:none;
+}
+.participants_db .ui-tabs-nav li.ui-state-active a {
+}
+.participants_db .ui-tabs .ui-tabs-panel {
+  clear: both;
+  position: relative;
+  left:0;
+  padding: 0;
+}
+.settings-class.participants_db .ui-tabs-panel {
+  max-width: 56em;
+}
+.participants_db .ui-tabs-panel h3 {
+  font: italic normal normal 24px/29px Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+  margin: 0;
+  padding: 0 0 5px;
+  line-height: 35px;
+  text-shadow: 0 1px 0 #fff;
+}
+.participants_db .ui-tabs-panel h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 1em 0;
+}
+.field-group-title {
+  width: 100%;
+  border-bottom: 2px solid #DDDDDD;
+}
+/* DIALOG BOXES */
+#dialog-overlay {
+  /* set it to fill the whole screen */
+  width:100%;
+  height:100%;
+  /* transparency for different browsers */
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  background:#000;
+  /* make sure it appear behind the dialog box but above everything else */
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:3000;
+  /* hide it by default */
+  display:none;
+}
+.participants-database-confirm.ui-dialog.ui-widget {
+  font-family: inherit;
+  font-size:1.1em;
+  line-height: 1.4;
+  border-radius: 5px;
+  background:#FFFFFF;
+  border: 2px solid #D54E21;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+  max-width: 25em;
+  position:absolute;
+  z-index:500000;
+  display:none;
+}
+.participants-database-confirm.ui-dialog {
+  padding:20px 40px;
+}
+.participants-database-confirm.ui-dialog a.button{
+  /*stylesforbutton*/
+  margin:10px auto 0 auto;
+  text-align:center;
+  display:block;
+  width:50px;
+  padding:5px 10px 6px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  line-height:1;
+  /*buttoncolor*/
+  background-color:#e33100;
+  /*css3implementation:)*/
+  /*roundedcorner*/
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  /*dropshadow*/
+  -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  /*textshadow*/
+  text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom:1px solid rgba(0,0,0,0.25);
+  position:relative;
+  cursor:pointer;
+}
+.participants-database-confirm.ui-dialog a.button:hover{
+  background-color:#c33100;
+}
+.participants-database-confirm.ui-dialog .ui-widget-header {
+  display: none;
+}
+.participants-database-confirm.ui-dialog .ui-dialog-buttonpane {
+  border: none;
+  display: block;
+  padding: 0;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  display: inherit;
+  clear: none;
+}
+.ui-dialog .ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: inherit;
+}
+.participants-database-confirm.ui-dialog .ui-state-default {
+  background: #E6E6E6;
+  border: 1px solid #D3D3D3;
+  font-weight: normal;    
+  cursor: pointer;
+  margin: 0.5em 0.4em 0.5em 0;
+  line-height: 1.8;
+}
+.participants-database-confirm.ui-dialog .ui-button-text {
+  display: inline;
+}
+.participants-database-confirm.ui-dialog .ui-state-hover {
+  border: 1px solid #b3b3b3;
+}
+.participants-database-confirm.ui-dialog .ui-icon {
+  vertical-align: middle;
+  text-indent: 0;
+}
+.participants-database-confirm.ui-dialog .ui-icon.dashicons[class*="no"] {
+  color: #D54E21;
+}
+.participants-database-confirm.ui-dialog .ui-icon.dashicons[class*="yes"] {
+}
+#confirmation-dialog p{
+}
+.ui-button {
+  margin:0.6em 2em 0.6em 0;
+}
+.ui-dialog-titlebar {
+  position:absolute;
+  top:1.6em;
+  right:1.6em;
+}
+
+/** DEBUG LOG **/
+.pdb-log-display-frame {
+  height: 50em;
+  overflow: auto;
+}
+.pdb-log-display {
+  min-height: 90%;
+  margin: 0;
+  text-align: left;
+  background: white;
+  padding: 1em;
+}
+.loghead {
+  font-weight: bold;
+}
+.pdb-log-display article {
+  padding: 1em 0.5em;
+}
+.pdb-log-display article::before {
+  content: "--------------------------------------";
+}
+.pdb-log-display article:first-of-type::before {
+  content: inherit;
+}
+.pdb-log-display header,
+.pdb-log-display footer {
+  color: #0073aa;
+}
+.pdb-log-display footer {
+  font-style: italic;
+}
+.pdb-debugging-refresh {
+  float: right;
+}
+.pdb-log-display p + br {
+  display: none;
+}
+@media only screen and (max-width: 782px) {
+  .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+    display: table-cell;
+  }
+  .pdb-horiz-scroll-width {
+    min-width: inherit;
+  }
+}

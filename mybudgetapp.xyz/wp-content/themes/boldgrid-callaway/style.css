@@ -1,0 +1,594 @@
+/*
+Theme Name: Callaway
+Author: The BoldGrid Team
+Theme URI: https://www.boldgrid.com/themes/callaway/
+Author URI: https://www.boldgrid.com/the-team/
+Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
+Version: 1.2.9
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: boldgrid-callaway
+
+Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-48
+*/
+
+/*------------------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------------------
+# Base Styles
+	## Positioning
+	## Typography
+	## Titles
+# Header
+# Navigation
+	## Main Menu
+	## Other Menus
+	## Social Menus
+# Pages
+	## Global
+	## Content
+	## Jumbotron
+# Posts
+	## Comments
+	## Sidebar Widgets
+	## Calendar Widget
+	## Forms
+	## Posts Navigation
+	## Sidebar Navigation
+	## Post Meta Data
+	## Panels
+	## Posts Formats
+# Footer
+# Custom
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+}
+p {
+	margin-bottom: 15px;
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+a,
+a:hover,
+a:focus,
+.entry-title a:hover,
+.entry-content a:hover,
+.site-footer a:hover,
+.site-footer a:focus,
+#footer-center-menu a {
+	text-decoration: none;
+}
+.site-footer a {
+	text-decoration: underline;
+}
+.cat-links a,
+.tags-links a {
+	line-height: 2;
+}
+
+/*-----------------------------------------------
+## Titles
+-----------------------------------------------*/
+.entry-title {
+	margin: 40px 0;
+	text-align: center;
+}
+.entry-title a {
+	padding: 0 15px;
+}
+.site-title,
+.site-description {
+	text-align: center;
+}
+.post-title-hidden .entry-meta {
+	margin-top: 50px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.site-title,
+	.site-description {
+		text-align: right;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Header
+------------------------------------------------------------------------*/
+.site-header {
+	padding-bottom: 20px;
+}
+
+/*------------------------------------------------------------------------
+# Navigation
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Main Menu
+-----------------------------------------------*/
+.navbar {
+	border: none;
+	min-height: 0;
+}
+.navbar-default {
+	background: none;
+	margin-bottom: 0;
+}
+.navbar-default .navbar-nav {
+	margin-left: -15px;
+	padding-top: 25px;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+	border: none;
+}
+.navbar-default .navbar-nav > .active > a,
+#primary-navbar .navbar-nav > li > a:hover,
+#primary-navbar .navbar-nav > li > a:focus {
+	background: none;
+}
+
+/* navbar links */
+.navbar-default .navbar-nav > li > a {
+	padding: 10px;
+}
+.navbar-default .navbar-nav > li:first-child > a {
+	margin-left: 0;
+}
+.navbar-default .navbar-nav .dropdown-menu {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Hover & Active */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .current-menu-parent > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	background: none;
+}
+
+/* xs */
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav .open .dropdown-menu {
+	text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navbar-default .navbar-nav,
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		text-align: left;
+	}
+}
+
+/*-----------------------------------------------
+## Other Menus
+-----------------------------------------------*/
+#secondary-menu a,
+#tertiary-menu a,
+#menu-social a {
+	padding: 0 5px;
+}
+#secondary-menu,
+#tertiary-menu {
+	text-align: center;
+}
+.footer-center-menu {
+	padding: 1.1em 0;
+}
+.footer-center-items li:after,
+.boldgrid-framework-menu li:after {
+	content: "";
+}
+
+/*-----------------------------------------------
+## Social Menus
+-----------------------------------------------*/
+.menu-social {
+	padding: 0;
+}
+.menu-social ul {
+	padding-left: 0;
+}
+.menu-social li {
+	display: inline;
+	list-style: none;
+}
+#menu-social ul {
+	padding-left: 0;
+}
+#menu-social ul li {
+	position: relative;
+	display: inline-block;
+}
+#menu-social li a {
+	display: inline-block;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+}
+.navbar-nav .menu-social {
+	margin-top: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.menu-social {
+		margin-top: 15px;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Pages
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Global
+-----------------------------------------------*/
+blockquote,
+.mod-blockquote {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+blockquote p,
+.mod-blockquote p {
+	padding-left: 15px;
+}
+hr {
+	border: 0;
+	height: 1px;
+}
+code {
+	border-radius: 4px;
+}
+
+/*-----------------------------------------------
+## Content
+-----------------------------------------------*/
+/* 404 Page */
+.error404 .list-group-item {
+	background: transparent;
+	border: none;
+}
+
+/* entry-content */
+.entry-content {
+	margin-top: 0;
+}
+.entry-content a {
+	text-decoration: underline;
+}
+.hentry {
+	margin: 0 auto 50px;
+}
+
+/* gallery */
+.gallery {
+	padding: 0;
+}
+
+/*-----------------------------------------------
+## Jumbotron
+-----------------------------------------------*/
+.jumbotron p {
+	margin-top: 30px;
+}
+.jumbotron {
+	margin-bottom: 30px;
+}
+
+/* Search Page */
+.search .jumbotron {
+	background: none;
+}
+.search-no-results .container .jumbotron {
+	padding-left: 0;
+}
+.search a {
+	text-decoration: underline;
+}
+.search a:hover,
+.search a:focus {
+	text-decoration: none;
+}
+.search #content {
+	padding: 0 15px;
+}
+
+/*------------------------------------------------------------------------
+# Posts
+------------------------------------------------------------------------*/
+.panel-footer {
+	padding: 0 15px 25px;
+	border-top: none;
+}
+
+/*-----------------------------------------------
+## Comments
+-----------------------------------------------*/
+#cancel-comment-reply-link {
+	float: right;
+	text-decoration: underline;
+}
+.comment-meta a,
+.comment-reply-title a {
+	text-decoration: underline;
+}
+#cancel-comment-reply-link:hover,
+#cancel-comment-reply-link:focus {
+	text-decoration: none;
+}
+.widget ul#recentcomments > li > a:hover,
+.widget ul#recentcomments > li > a:focus,
+.widget ul#recentcomments > li > span > a:hover,
+.widget ul#recentcomments > li > span > a:focus {
+	text-decoration: none;
+}
+.widget ul#recentcomments > li > a {
+	text-decoration: underline;
+}
+.widget ul#recentcomments > li.recentcomments {
+	padding: 8px 0 !important;
+}
+.widget ul#recentcomments > li:before {
+	font-family: "FontAwesome";
+	font-size: 17px;
+	padding-right: 14px;
+	content: "\f04b";
+}
+.widget ul#recentcomments > li {
+	line-height: 1.6;
+}
+.comments-title {
+	margin: 0 0 50px;
+}
+.comments {
+	padding: 25px;
+	margin-top: 25px;
+}
+
+/*-----------------------------------------------
+## Sidebar Widgets
+-----------------------------------------------*/
+.sidebar {
+	margin-bottom: 25px;
+}
+.sidebar a {
+	text-decoration: underline;
+}
+.sidebar a:hover,
+.sidebar a:focus {
+	text-decoration: none;
+}
+aside.sidebar h2.widget-title {
+	padding-bottom: 10px;
+}
+.sidebar > aside,
+.sidebar .empty-sidebar-message {
+	padding: 20px 12px;
+}
+.add-widget-message {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.widget {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.tagcloud a {
+	text-decoration: underline;
+}
+.tagcloud a:hover,
+.tagcloud a:focus {
+	text-decoration: none;
+}
+.cat-item-none:before {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.sidebar-1 .sidebar #searchform .button-primary {
+		width: auto;
+		height: auto;
+		padding: 0 1em;
+		font-size: 14px;
+	}
+}
+
+/*-----------------------------------------------
+## Calendar Widget
+-----------------------------------------------*/
+#wp-calendar caption {
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#wp-calendar thead th {
+	padding-bottom: 10px;
+}
+#wp-calendar tbody td {
+	text-align: center;
+}
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+#wp-calendar tfoot #prev {
+	padding-top: 10px;
+}
+.widget_calendar .table > tfoot > tr > td {
+	border-top: none;
+}
+td, th {
+	padding: 17px 21px;
+}
+dd {
+	margin-left: 59px;
+	margin-bottom: 17px;
+}
+dt {
+	margin-bottom: 7px;
+}
+
+/*-----------------------------------------------
+## Forms
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+## Post Navigation
+-----------------------------------------------*/
+.navbar-nav > li > a {
+	text-decoration: none;
+}
+.pager li > a {
+	border-radius: 0;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+}
+
+/*-----------------------------------------------
+## Sidebar Navigation
+-----------------------------------------------*/
+.sidebar .widget .nav > li > a:focus,
+.sidebar .widget .nav > li > a:hover {
+	background: none transparent;
+	text-decoration: none;
+}
+.sidebar .widget .nav > li:before {
+	font-family: "FontAwesome";
+	font-size: 17px;
+	padding-right: 14px;
+	content: "\f04b";
+	float: left;
+	padding-top: 10px;
+}
+.sidebar .widget .nav > li > a {
+	padding: 8px 0;
+	text-decoration: underline;
+}
+.sidebar .widget .nav > li {
+	line-height: 1.6;
+}
+
+/*-----------------------------------------------
+## Post Meta Data
+-----------------------------------------------*/
+.entry-meta {
+	padding-bottom: 30px;
+}
+.entry-footer a,
+.entry-meta a {
+	text-decoration: underline;
+}
+.entry-footer a:hover,
+.entry-footer a:focus,
+.entry-meta a:hover,
+.entry-meta a:focus {
+	text-decoration: none;
+}
+a.url,
+a.comment-edit-link {
+	text-decoration: underline;
+}
+a.url:hover,
+.comment-meta a:hover,
+.edit-link a:hover {
+	text-decoration: none;
+}
+
+/*-----------------------------------------------
+## Panels
+-----------------------------------------------*/
+.panel {
+	border: none;
+	box-shadow: none;
+}
+.panel-heading {
+	border-bottom: none;
+}
+
+/*-----------------------------------------------
+## Post Formats
+-----------------------------------------------*/
+.blog h1.entry-title a {
+	margin-left: -15px;
+}
+.blog h1.entry-title {
+	text-align: left;
+}
+
+/*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+.woocommerce div.product .woocommerce-tabs .panel {
+	padding: 20px;
+}
+.nav-tabs {
+	border: none;
+}
+.woocommerce div.product .product_title {
+	text-align: left;
+}
+
+/*------------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+.site-info {
+	margin-bottom: -10px;
+	text-align: center;
+}
+.footer-center-items {
+	padding-left: 0;
+}
+.footer-center-items li a {
+	padding: 5px;
+}
+.attribution {
+	padding-bottom: 30px;
+	text-align: center;
+}
+footer aside.widget {
+	text-align: left;
+}
+footer aside.widget a {
+	text-decoration: none;
+}
+.site-footer {
+	padding: 0 0 20px;
+	text-align: center;
+}
+.site-footer .textwidget p {
+	text-align: center;
+}

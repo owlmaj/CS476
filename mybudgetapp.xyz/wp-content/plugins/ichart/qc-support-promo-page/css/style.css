@@ -1,0 +1,348 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #22a0c9;
+}
+
+::selection {
+    color: #fff;
+    background: #22a0c9;
+}
+
+.letf {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+/*ul li,
+ol li {
+	list-style:none;
+	margin:0;
+}*/
+ul li a:hover {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list-style-number {
+    list-style: decimal !important;
+}
+
+
+/*--------------------------main style------------------------------*/
+/*--------------------------Start Header------------------------------*/
+
+
+/* ------------------------header top-------------------------------- */
+.main-container {
+    overflow: hidden;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix-div::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.qc_support_container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.qc_tab_container {
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .premium-support {
+        margin-top: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .premium-support {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 579px) {
+
+    .support-btn a {
+        font-size: 18px;
+        width: 220px;
+    }
+}
+
+
+.support-btn-main.clearfix-div {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.support-btn a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    background: #101010;
+    border: 1px solid #101010;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 270px;
+}
+
+.support-btn .free-support {
+    background: #fff;
+    border: 1px solid #101010;
+    color: #101010;
+}
+
+.support-btn {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.support-btn .free-support:hover {
+    background: #101010;
+    color: #fff;
+}
+
+.support-btn .premium-support:hover {
+    background: #fff;
+    border: 1px solid #101010;
+    color: #101010;
+}
+
+.support-btn .premium-support:hover,
+.support-btn .free-support:hover,
+.support-btn .free-support,
+.support-btn .premium-support {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+/************
+ichart-start-steps
+***********/
+ol.ichart-start-steps {
+    margin: 30px;
+    padding: 10px 30px;
+    border-left: 3px solid #CCCCCC;
+    list-style-type: decimal;
+    counter-reset: li;
+}
+
+ol.ichart-start-steps li {
+    margin: 30px;
+    padding: 10px 30px;
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    position: relative;
+    list-style: none;
+    box-shadow: 0 0 2px #cccccc;
+}
+
+ol.ichart-start-steps li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -90px;
+    top: 10px;
+    z-index: 3;
+    height: 47px;
+    width: 47px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+    background: #0073aa;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 2px #cccccc;
+}
+
+ol.ichart-start-steps li:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 30px solid #FFFFFF;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    left: -30px;
+    top: 17px;
+    z-index: 3;
+}
+
+/*
+Plugin Info HEADING
+*/
+
+.ichart-plugin-title {
+    position: relative;
+    font-size: 24px !important;
+    display: table;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding: 10px 34px !important;
+}
+
+.ichart-plugin-title:before, .ichart-plugin-title:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+}
+
+.ichart-plugin-title:before {
+    left: 0;
+    top: 0;
+    border-top: 2px solid #0073aa;
+    border-left: 2px solid #0073aa;
+}
+
+.ichart-plugin-title:after {
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid #0073aa;
+    border-right: 2px solid #0073aa;
+}
+
+/*
+Feature LIST
+*/
+.ichart-feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+}
+
+.ichart-feature-list li {
+    padding: 15px 15px 15px 35px;
+    list-style: none;
+    flex-basis: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+    font-size: 16px;
+}
+
+.ichart-feature-list li:nth-child(odd) {
+    border-right: 1px solid #CCCCCC;
+}
+
+.ichart-feature-list li:before {
+    content: "\f18e";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    transform: translate(9px, 0px);
+}
+
+.qc-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: center;
+}
+
+.qc-product-container > .qc-product-box {
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.qc-product-box .support-block {
+    background-color: #fff;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px 5px 0 0;
+}
+
+.support-block-img {
+    height: 60px;
+    background: #96c4da;
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.support-block-img img {
+    max-width: 60px;
+}
+.support-block-info{
+    min-height:222px;
+}
+.support-block-info h4 a {
+    font-size: 22px !important;
+    color: inherit;
+    line-height: 1.5;
+    font-weight: bold;
+    outline: none;
+    box-shadow: none;
+}
+
+.support-block-info p {
+    font-size: 14px;
+    line-height: 24px;
+}
